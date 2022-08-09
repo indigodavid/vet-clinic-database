@@ -15,17 +15,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Authors
 
-👤 **Author1**
+👤 **David Vera**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-indigodavid-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/indigodavid)
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-indigo1987-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/indigo1987)
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-davidveracastillo-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://linkedin.com/in/david-vera-castillo-001b5756/)
 
 ## 🤝 Contributing
 
@@ -39,9 +33,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- My supportive family 😊
+- Microverse
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
