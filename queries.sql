@@ -70,14 +70,14 @@ SELECT
   vets.name AS vet,
   date_of_visit
 FROM visits
-RIGHT JOIN animals ON animals_id = animals.id
-RIGHT JOIN vets ON vets_id = vets.id
+RIGHT JOIN animals ON animal_id = animals.id
+RIGHT JOIN vets ON vet_id = vets.id
 WHERE vets.name = 'William Tatcher'
 ORDER BY date_of_visit DESC LIMIT 1;
 
 SELECT count(animals.name), vets.name AS vet FROM visits
-RIGHT JOIN animals ON animals_id = animals.id
-RIGHT JOIN vets ON vets_id = vets.id
+RIGHT JOIN animals ON animal_id = animals.id
+RIGHT JOIN vets ON vet_id = vets.id
 GROUP BY vets.name
 HAVING vets.name = 'Stephanie Mendez';
 
@@ -85,7 +85,7 @@ SELECT
   vets.name AS vets,
   species.name AS specialties
 FROM specializations
-RIGHT JOIN vets ON vets_id = vets.id
+RIGHT JOIN vets ON vet_id = vets.id
 LEFT JOIN species ON species_id = species.id;
 
 SELECT
@@ -93,27 +93,27 @@ SELECT
   vets.name AS vet,
   date_of_visit
 FROM visits
-LEFT JOIN animals ON animals_id = animals.id
-LEFT JOIN vets ON vets_id = vets.id
+LEFT JOIN animals ON animal_id = animals.id
+LEFT JOIN vets ON vet_id = vets.id
 GROUP BY animals.name, vets.name, date_of_visit
 HAVING date_of_visit BETWEEN '2020-04-01' AND '2020-08-30'
 AND vets.name = 'Stephanie Mendez';
 
 SELECT
   animals.name,
-  count(visits.animals_id) AS number_of_visits
+  count(visits.animal_id) AS number_of_visits
 FROM visits
-LEFT JOIN animals ON animals_id = animals.id
+LEFT JOIN animals ON animal_id = animals.id
 GROUP BY animals.name
-ORDER BY count(visits.animals_id) DESC LIMIT 1;
+ORDER BY count(visits.animal_id) DESC LIMIT 1;
 
 SELECT
   animals.name,
   vets.name AS vet,
   date_of_visit
 FROM visits
-RIGHT JOIN animals ON animals_id = animals.id
-RIGHT JOIN vets ON vets_id = vets.id
+RIGHT JOIN animals ON animal_id = animals.id
+RIGHT JOIN vets ON vet_id = vets.id
 WHERE vets.name = 'Maisy Smith'
 ORDER BY date_of_visit ASC LIMIT 1;
 
@@ -130,8 +130,8 @@ SELECT
   vets.age AS vet_age,
   vets.date_of_graduation AS vet_graduation
 FROM visits
-LEFT JOIN animals ON animals_id = animals.id
-LEFT JOIN vets ON vets_id = vets.id
+LEFT JOIN animals ON animal_id = animals.id
+LEFT JOIN vets ON vet_id = vets.id
 LEFT JOIN species ON animals.species_id = species.id
 LEFT JOIN owners ON animals.owner_id = owners.id
 ORDER BY date_of_visit DESC LIMIT 1;
@@ -139,19 +139,19 @@ ORDER BY date_of_visit DESC LIMIT 1;
 SELECT
   count(*) AS visits_to_non_specialist 
 FROM visits
-LEFT JOIN animals ON visits.animals_id = animals.id
-LEFT JOIN vets ON visits.vets_id = vets.id
+LEFT JOIN animals ON visits.animal_id = animals.id
+LEFT JOIN vets ON visits.vet_id = vets.id
 WHERE animals.species_id NOT IN (
   SELECT species_id FROM specializations
-  WHERE vets_id = vets.id
+  WHERE vet_id = vets.id
 );
 
 SELECT 
   species.name, 
   count(*) 
 FROM visits
-JOIN animals ON visits.animals_id = animals.id
+JOIN animals ON visits.animal_id = animals.id
 JOIN species ON animals.species_id = species.id
-JOIN vets ON visits.vets_id = vets.id
+JOIN vets ON visits.vet_id = vets.id
 GROUP BY species.name, vets.name HAVING vets.name = 'Maisy Smith'
 ORDER BY count(*) DESC LIMIT 1;
