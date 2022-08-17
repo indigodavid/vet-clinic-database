@@ -68,3 +68,6 @@ CREATE INDEX visit_animal_asc ON visits(animal_id ASC);
 
 -- Add index to improve visits queries using vet_id
 CREATE INDEX visit_vet_asc ON visits(vet_id ASC);
+
+-- Add index to improve owners queries using email
+CREATE INDEX owners_email_asc ON owners(email ASC);
