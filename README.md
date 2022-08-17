@@ -21,6 +21,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [![Twitter Badge](https://img.shields.io/badge/-indigo1987-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/indigo1987)
 - LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-davidveracastillo-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://linkedin.com/in/david-vera-castillo-001b5756/)
 
+👤 **Emmanuel Orji-Ihuoma**
+
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-emmiiorji-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/emmiiorji)
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-emmiiorji-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/emmiiorji)
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-orji-emmanuel-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://linkedin.com/in/orji-emmanuel/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
