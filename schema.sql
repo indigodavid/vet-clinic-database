@@ -65,3 +65,6 @@ ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 -- Add index to improve visits queries using animal_id
 CREATE INDEX visit_animal_asc ON visits(animal_id ASC);
+
+-- Add index to improve visits queries using vet_id
+CREATE INDEX visit_vet_asc ON visits(vet_id ASC);
